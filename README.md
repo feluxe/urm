@@ -25,17 +25,7 @@ It's goal is to offer a standard, that applications can agree on, to exchange se
       "line": 61,
       "col": 42
     },
-    {
-      "before": "Context before match...",
-      "match": "hello",
-      "replace": "bye",
-      "after": "Context after match...",
-      "groups": ["Regex capture group val1.", "Regex capture group val2"],
-      "start": 89243,
-      "len": 5,
-      "line": 61,
-      "col": 42
-    }     
+    # Next Match...    
   ]
 }
 ```
