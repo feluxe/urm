@@ -85,18 +85,18 @@ The column in which the match starts.
       "before": "Context before match...",
       "match": "hello",
       "replace": "bye",
-      "after": "Context after match..."
+      "after": "Context after match...",
       "groups": ["Regex capture group val1.", "Regex capture group val2"],
       "start": 89243,
       "len": 5,
       "line": 61,
       "col": 42
-    }
+    },
     {
       "before": "Context before match...",
       "match": "hello",
       "replace": "bye",
-      "after": "Context after match..."
+      "after": "Context after match...",
       "groups": ["Regex capture group val1.", "Regex capture group val2"],
       "start": 89243,
       "len": 5,
