@@ -1,9 +1,9 @@
-# Universal Regex Matches
+# Universal Search Results
 
 ## Description
 
-*Universal Search Results* (USR) is a format that can be used to represent search results.
-It's goal is to offer a standard on which applications can agree to exchange search results.
+*Universal Search Results* (USR) is a format that can be used to present search results.
+It's goal is to offer a standard, that applications can agree on, to exchange search results.
 
 ## The Format
 
@@ -26,8 +26,6 @@ The encoding of the reference.
 `pattern`
 
 The pattern that was used to perform the search. (Usually a regex pattern)
-
-``
 
 `matches`
 
@@ -76,34 +74,34 @@ The column in which the match starts.
 
 ## JSON example:
 
-  {
-    "ref": "/home/peter/example.txt",
-    "type": "file",
-    "encoding": "utf-8",
-    "pattern": "foo",
-    "matches": [
-      {
-        "before": "Context before match...",
-        "match": "hello",
-        "replace": "bye",
-        "after": "Context after match..."
-        "groups": ["Regex capture group val1.", "Regex capture group val2"],
-        "start": 89243,
-        "len": 5,
-        "line": 61,
-        "col": 42
-      }
-      {
-        "before": "Context before match...",
-        "match": "hello",
-        "replace": "bye",
-        "after": "Context after match..."
-        "groups": ["Regex capture group val1.", "Regex capture group val2"],
-        "start": 89243,
-        "len": 5,
-        "line": 61,
-        "col": 42
-      }     
-    ]
-  }
+    {
+      "ref": "/home/peter/example.txt",
+      "type": "file",
+      "encoding": "utf-8",
+      "pattern": "foo",
+      "matches": [
+        {
+          "before": "Context before match...",
+          "match": "hello",
+          "replace": "bye",
+          "after": "Context after match..."
+          "groups": ["Regex capture group val1.", "Regex capture group val2"],
+          "start": 89243,
+          "len": 5,
+          "line": 61,
+          "col": 42
+        }
+        {
+          "before": "Context before match...",
+          "match": "hello",
+          "replace": "bye",
+          "after": "Context after match..."
+          "groups": ["Regex capture group val1.", "Regex capture group val2"],
+          "start": 89243,
+          "len": 5,
+          "line": 61,
+          "col": 42
+        }     
+      ]
+    }
 
