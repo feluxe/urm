@@ -26,7 +26,7 @@ It's goal is to offer a standard, that applications can agree on, to exchange se
       "col": 42
     },
     {
-    "Next Match":"..."
+      "Next Match":"..."
     }
   ]
 }
