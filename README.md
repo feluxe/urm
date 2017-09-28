@@ -72,36 +72,38 @@ The column in which the match starts.
 
 
 
-## JSON example:
+## USR in JSON:
 
+```json
+{
+  "ref": "/home/peter/example.txt",
+  "type": "file",
+  "encoding": "utf-8",
+  "pattern": "foo",
+  "matches": [
     {
-      "ref": "/home/peter/example.txt",
-      "type": "file",
-      "encoding": "utf-8",
-      "pattern": "foo",
-      "matches": [
-        {
-          "before": "Context before match...",
-          "match": "hello",
-          "replace": "bye",
-          "after": "Context after match..."
-          "groups": ["Regex capture group val1.", "Regex capture group val2"],
-          "start": 89243,
-          "len": 5,
-          "line": 61,
-          "col": 42
-        }
-        {
-          "before": "Context before match...",
-          "match": "hello",
-          "replace": "bye",
-          "after": "Context after match..."
-          "groups": ["Regex capture group val1.", "Regex capture group val2"],
-          "start": 89243,
-          "len": 5,
-          "line": 61,
-          "col": 42
-        }     
-      ]
+      "before": "Context before match...",
+      "match": "hello",
+      "replace": "bye",
+      "after": "Context after match..."
+      "groups": ["Regex capture group val1.", "Regex capture group val2"],
+      "start": 89243,
+      "len": 5,
+      "line": 61,
+      "col": 42
     }
+    {
+      "before": "Context before match...",
+      "match": "hello",
+      "replace": "bye",
+      "after": "Context after match..."
+      "groups": ["Regex capture group val1.", "Regex capture group val2"],
+      "start": 89243,
+      "len": 5,
+      "line": 61,
+      "col": 42
+    }     
+  ]
+}
+```
 
