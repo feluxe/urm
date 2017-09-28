@@ -5,7 +5,40 @@
 *Universal Search Results* (USR) is a format that can be used to present search results.
 It's goal is to offer a standard, that applications can agree on, to exchange search results.
 
-## The Format
+## USR in JSON:
+
+```json
+{
+  "ref": "/home/peter/example.txt",
+  "type": "file",
+  "encoding": "utf-8",
+  "pattern": "foo",
+  "matches": [
+    {
+      "before": "Context before match...",
+      "match": "hello",
+      "replace": "bye",
+      "after": "Context after match...",
+      "groups": ["Regex capture group val1.", "Regex capture group val2"],
+      "start": 89243,
+      "len": 5,
+      "line": 61,
+      "col": 42
+    },
+    {
+      "before": "Context before match...",
+      "match": "hello",
+      "replace": "bye",
+      "after": "Context after match...",
+      "groups": ["Regex capture group val1.", "Regex capture group val2"],
+      "start": 89243,
+      "len": 5,
+      "line": 61,
+      "col": 42
+    }     
+  ]
+}
+```
 
 ### Header
 
@@ -71,39 +104,4 @@ The line number in which the match starts.
 The column in which the match starts.
 
 
-
-## USR in JSON:
-
-```json
-{
-  "ref": "/home/peter/example.txt",
-  "type": "file",
-  "encoding": "utf-8",
-  "pattern": "foo",
-  "matches": [
-    {
-      "before": "Context before match...",
-      "match": "hello",
-      "replace": "bye",
-      "after": "Context after match...",
-      "groups": ["Regex capture group val1.", "Regex capture group val2"],
-      "start": 89243,
-      "len": 5,
-      "line": 61,
-      "col": 42
-    },
-    {
-      "before": "Context before match...",
-      "match": "hello",
-      "replace": "bye",
-      "after": "Context after match...",
-      "groups": ["Regex capture group val1.", "Regex capture group val2"],
-      "start": 89243,
-      "len": 5,
-      "line": 61,
-      "col": 42
-    }     
-  ]
-}
-```
 
