@@ -1,9 +1,14 @@
-# Universal Search Results
+# Universal Regex Search Results
 
 ## Description
 
-*Universal Search Results* (USR) is a format that can be used to present search results.
-It's goal is to offer a standard, that applications can agree on, to exchange search results.
+*Universal Regex Search Results* (URSR) is a format for presenting search results.
+
+## What is this good for?
+
+This format is a possible communication basis for a new generation of search (and replace) tools which are build around regular expressions.
+
+
 
 ## USR in JSON:
 
