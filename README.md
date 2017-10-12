@@ -2,15 +2,14 @@
 
 ## Description
 
-*Universal Regex Search Results* (URSR) is a format for presenting search results.
+*Universal Regex Search Results* (URSR) is a format to store search results.
 
 ## What is this good for?
 
 This format is a possible communication basis for a new generation of search (and replace) tools which are build around regular expressions.
 
 
-
-## USR in JSON:
+## URSR in JSON:
 
 ```json
 {
@@ -39,64 +38,64 @@ This format is a possible communication basis for a new generation of search (an
 
 ### Header
 
-`ref`
+#### `ref`
 
 
 The reference that was searched. Can be a file path, an url or the search 
 reference itself as a string.
 
-`type`
+#### `type`
 
 The reference type. Can be 'file', 'url', 'string', etc.
 
-`encoding`
+#### `encoding`
 
 The encoding of the reference.
 
-`pattern`
+#### `pattern`
 
 The pattern that was used to perform the search. (Usually a regex pattern)
 
-`matches`
+#### `matches`
 
 A list of matches see Match below. 
 
 
 ### Match
 
-`before`
+#### `before`
 
 Context before the match. (optional)
 
-`match`
+#### `match`
 
 The value that matches the search pattern.
 
-`repl`
+#### `repl`
 
 A replacement for the 'match'. (optional)
 
-`after`
+#### `after`
 
 Context after the match. (optional)
 
-`groups`
+#### `groups`
 
 Regex capture group values.
 
-`start`
+#### `start`
 
 The starting position of the match, within the reference.
 
-`len`
+#### `len`
 
 The length of the match.
 
-`line`
+#### `line`
 
 The line number in which the match starts.
 
-`col`
+#### `col`
 
 The column in which the match starts.
 
