@@ -36,7 +36,9 @@ This format is a possible communication basis for a new generation of search (an
 }
 ```
 
-### Header
+## Header
+
+The header contains information about the reference and the search that was performed.
 
 #### `ref`
 
@@ -61,7 +63,9 @@ The pattern that was used to perform the search. (Usually a regex pattern)
 A list of matches see Match below. 
 
 
-### Match
+## Matches
+
+Each URSR main contain multiple *Matches*.
 
 #### `before`
 
