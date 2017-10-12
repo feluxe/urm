@@ -2,7 +2,7 @@
 
 ## Description
 
-*Universal Regex Search Results* (URSR) is a format to store search results.
+*Universal Regex Search Results* (URSR) is a format to store regex search results.
 
 ## What is this good for?
 
@@ -24,9 +24,9 @@ This format is a possible communication basis for a new generation of search (an
       "replace": "bye",
       "after": "Context after match...",
       "groups": ["Regex capture group val1.", "Regex capture group val2"],
-      "start": 89243,
+      "start": 8924,
       "len": 5,
-      "line": 61,
+      "line": 590,
       "col": 42
     },
     {
