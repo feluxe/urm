@@ -36,6 +36,8 @@ This format is a possible communication basis for a new generation of search (an
 }
 ```
 
+                         UXRXTZ    
+
 ## Header
 
 The header contains information about the reference and the search that was performed.
